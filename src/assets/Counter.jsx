@@ -26,15 +26,15 @@ const reset = ()=>{
 
 return(
     <>
-    <div className="full flex justify-center">
-        <div className="flex flex-col justify-center items-center gap-10">
-<h1>Counter [{count}]</h1>
+    <div className="full flex justify-center items-center px-4">
+        <div className="flex flex-col justify-center items-center gap-10 text-center">
+<h1 className="text-2xl font-semibold">Counter [{count}]</h1>
 {count==0&&(<p className="text-gray-100">(Minimum limit reached)</p>)}
 
-<div className="flex justify-center gap-20">
-<button onClick={inc} className="border border-2 p-2">Increment</button>
-<button onClick={dec}><span className="border border-2 p-2">Decrement</span></button>
-<button onClick={reset} className="border border-2 p-2">Reset</button>
+<div className="flex flex-col sm:flex-row justify-center gap-5">
+<button onClick={inc} className="border-yellow-400 border-2 py-2 px-5">Increment</button>
+<button onClick={dec}><span className="border-yellow-400 border-2 py-2 px-5">Decrement</span></button>
+<button onClick={reset} className="border-yellow-400 border-2 py-2 px-5">Reset</button>
 </div>
 </div> 
 </div>
